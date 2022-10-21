@@ -1,0 +1,501 @@
+[debug] [2022-10-21T04:29:31.602Z] ----------------------------------------------------------------------
+[debug] [2022-10-21T04:29:31.603Z] Command:       /Users/fahadahmed/.nvm/versions/node/v16.13.2/bin/node /Users/fahadahmed/.nvm/versions/node/v16.13.2/bin/firebase emulators:start
+[debug] [2022-10-21T04:29:31.603Z] CLI Version:   11.15.0
+[debug] [2022-10-21T04:29:31.604Z] Platform:      darwin
+[debug] [2022-10-21T04:29:31.604Z] Node Version:  v16.13.2
+[debug] [2022-10-21T04:29:31.604Z] Time:          Fri Oct 21 2022 12:29:31 GMT+0800 (Malaysia Time)
+[debug] [2022-10-21T04:29:31.604Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-21T04:29:31.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-21T04:29:31.641Z] > authorizing via signed-in user (contact@fhdamd.dev)
+[debug] [2022-10-21T04:29:31.706Z] openjdk version "16.0.1" 2021-04-20
+
+[debug] [2022-10-21T04:29:31.707Z] OpenJDK Runtime Environment (build 16.0.1+9-24)
+OpenJDK 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
+
+[debug] [2022-10-21T04:29:31.711Z] Parsed Java major version: 16
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub, storage"}}
+[debug] [2022-10-21T04:29:32.368Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:32.368Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5010}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-10-21T04:29:32.373Z] [hub] writing locator at /var/folders/3m/cnx97ctn6fg31ht_qlmv62080000gn/T/hub-coding-pixels-2b3e0.json
+[debug] [2022-10-21T04:29:32.376Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0 [none]
+[debug] [2022-10-21T04:29:32.779Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0 200
+[debug] [2022-10-21T04:29:32.779Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0 {"projectId":"coding-pixels-2b3e0","projectNumber":"262949706818","displayName":"coding-pixels","name":"projects/coding-pixels-2b3e0","resources":{"hostingSite":"coding-pixels-2b3e0","realtimeDatabaseInstance":"coding-pixels-2b3e0-default-rtdb","storageBucket":"coding-pixels-2b3e0.appspot.com","locationId":"australia-southeast1"},"state":"ACTIVE","etag":"1_b1b2c93e-7393-49bf-b702-afbe2538b65c"}
+[debug] [2022-10-21T04:29:33.497Z] defaultcredentials: writing to file /Users/fahadahmed/.config/firebase/contact_fhdamd_dev_application_default_credentials.json
+[debug] [2022-10-21T04:29:33.499Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites pageToken=&pageSize=10
+[debug] [2022-10-21T04:29:34.215Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites 200
+[debug] [2022-10-21T04:29:34.215Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites {"sites":[{"name":"projects/coding-pixels-2b3e0/sites/byxel-codingpixels","defaultUrl":"https://byxel-codingpixels.web.app","type":"USER_SITE"},{"name":"projects/coding-pixels-2b3e0/sites/coding-pixels-2b3e0","defaultUrl":"https://coding-pixels-2b3e0.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-21T04:29:34.216Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites 
+[debug] [2022-10-21T04:29:34.928Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites 200
+[debug] [2022-10-21T04:29:34.928Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites {"sites":[{"name":"projects/coding-pixels-2b3e0/sites/byxel-codingpixels","defaultUrl":"https://byxel-codingpixels.web.app","type":"USER_SITE"},{"name":"projects/coding-pixels-2b3e0/sites/coding-pixels-2b3e0","defaultUrl":"https://coding-pixels-2b3e0.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-21T04:29:34.929Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/webApps/-/config [none]
+[debug] [2022-10-21T04:29:35.645Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/webApps/-/config 200
+[debug] [2022-10-21T04:29:35.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/webApps/-/config {"projectId":"coding-pixels-2b3e0","databaseURL":"https://coding-pixels-2b3e0-default-rtdb.firebaseio.com","storageBucket":"coding-pixels-2b3e0.appspot.com","locationId":"australia-southeast1","apiKey":"AIzaSyDkyZSGRYTOAVn0FlJJ3k0NGSxFy6iykEk","authDomain":"coding-pixels-2b3e0.firebaseapp.com","messagingSenderId":"262949706818"}
+[debug] [2022-10-21T04:29:37.859Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:37.860Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-21T04:29:37.860Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5010}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/fahadahmed/.config/firebase/contact_fhdamd_dev_application_default_credentials.json. Non-emulated services will access production using these credentials. Be careful! {"metadata":{"emulator":{"name":"functions"},"message":"Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/fahadahmed/.config/firebase/contact_fhdamd_dev_application_default_credentials.json. Non-emulated services will access production using these credentials. Be careful!"}}
+[debug] [2022-10-21T04:29:37.905Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/adminSdkConfig [none]
+[debug] [2022-10-21T04:29:38.613Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/adminSdkConfig 200
+[debug] [2022-10-21T04:29:38.613Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/adminSdkConfig {"projectId":"coding-pixels-2b3e0","databaseURL":"https://coding-pixels-2b3e0-default-rtdb.firebaseio.com","storageBucket":"coding-pixels-2b3e0.appspot.com","locationId":"australia-southeast1"}
+[debug] [2022-10-21T04:29:38.648Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-21T04:29:38.648Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2022-10-21T04:29:38.648Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/fahadahmed/.cache/firebase/emulators/cloud-firestore-emulator-v1.15.1.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","coding-pixels-2b3e0","--rules","/Users/fahadahmed/development/firebase-nextjs/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/fahadahmed/.cache/firebase/emulators/cloud-firestore-emulator-v1.15.1.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"coding-pixels-2b3e0\",\"--rules\",\"/Users/fahadahmed/development/firebase-nextjs/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-10-21T04:29:40.861Z] Oct 21, 2022 12:29:40 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 12:29:40 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2022-10-21T04:29:40.880Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-10-21T04:29:40.880Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n"}}
+[debug] [2022-10-21T04:29:40.881Z] 
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2022-10-21T04:29:43.753Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-10-21T04:29:43.753Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-21T04:29:43.753Z] Starting Pub/Sub Emulator with command {"binary":"/Users/fahadahmed/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator","args":["--host=127.0.0.1","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"/Users/fahadahmed/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator\",\"args\":[\"--host=127.0.0.1\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2022-10-21T04:29:43.927Z] This is the Google Pub/Sub fake.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"This is the Google Pub/Sub fake.\n"}}
+[debug] [2022-10-21T04:29:43.927Z] Implementation may be incomplete or differ from the real system.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Implementation may be incomplete or differ from the real system.\n"}}
+[debug] [2022-10-21T04:29:44.000Z] Oct 21, 2022 12:29:43 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Oct 21, 2022 12:29:43 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported\n"}}
+[debug] [2022-10-21T04:29:44.461Z] Oct 21, 2022 12:29:44 PM io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround
+INFO: Unable to apply Java 7 long hostname workaround.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Oct 21, 2022 12:29:44 PM io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround\nINFO: Unable to apply Java 7 long hostname workaround.\n"}}
+[debug] [2022-10-21T04:29:44.718Z] Oct 21, 2022 12:29:44 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: Server started, listening on 8085
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Oct 21, 2022 12:29:44 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: Server started, listening on 8085\n"}}
+[debug] [2022-10-21T04:29:44.785Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-21T04:29:44.853Z] Oct 21, 2022 12:29:44 PM io.gapi.emulators.grpc.GrpcServer$3 operationComplete
+INFO: Adding handler(s) to newly registered Channel.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Oct 21, 2022 12:29:44 PM io.gapi.emulators.grpc.GrpcServer$3 operationComplete\nINFO: Adding handler(s) to newly registered Channel.\n"}}
+[debug] [2022-10-21T04:29:46.268Z] Temp file directory for storage emulator: /var/folders/3m/cnx97ctn6fg31ht_qlmv62080000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/3m/cnx97ctn6fg31ht_qlmv62080000gn/T/firebase/storage/blobs"}}
+[debug] [2022-10-21T04:29:46.271Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites 
+[debug] [2022-10-21T04:29:47.013Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites 200
+[debug] [2022-10-21T04:29:47.013Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/sites {"sites":[{"name":"projects/coding-pixels-2b3e0/sites/byxel-codingpixels","defaultUrl":"https://byxel-codingpixels.web.app","type":"USER_SITE"},{"name":"projects/coding-pixels-2b3e0/sites/coding-pixels-2b3e0","defaultUrl":"https://coding-pixels-2b3e0.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-21T04:29:47.014Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/webApps/-/config [none]
+[debug] [2022-10-21T04:29:47.728Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/webApps/-/config 200
+[debug] [2022-10-21T04:29:47.728Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/coding-pixels-2b3e0/webApps/-/config {"projectId":"coding-pixels-2b3e0","databaseURL":"https://coding-pixels-2b3e0-default-rtdb.firebaseio.com","storageBucket":"coding-pixels-2b3e0.appspot.com","locationId":"australia-southeast1","apiKey":"AIzaSyDkyZSGRYTOAVn0FlJJ3k0NGSxFy6iykEk","authDomain":"coding-pixels-2b3e0.firebaseapp.com","messagingSenderId":"262949706818"}
+[info] i  hosting[coding-pixels-2b3e0]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[coding-pixels-2b3e0]: Local server: http://127.0.0.1:5010 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5010\u001b[22m\u001b[24m"}}
+[debug] [2022-10-21T04:29:47.835Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-21T04:29:47.835Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-21T04:29:47.835Z] Starting Emulator UI with command {"binary":"node","args":["/Users/fahadahmed/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/fahadahmed/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-21T04:29:47.913Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-10-21T04:29:47.913Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/fahadahmed/development/firebase-nextjs/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/fahadahmed/development/firebase-nextjs/functions\" for Cloud Functions..."}}
+[debug] [2022-10-21T04:29:48.119Z] Validating nodejs source
+[debug] [2022-10-21T04:29:48.717Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.2.0",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "private": true
+}
+[debug] [2022-10-21T04:29:48.718Z] Building nodejs source
+[debug] [2022-10-21T04:29:48.718Z] Analyzing nodejs backend spec
+[debug] [2022-10-21T04:29:48.720Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-21T04:29:48.815Z] Serving at port 9005
+
+[debug] [2022-10-21T04:29:48.893Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-21T04:29:48.897Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/coding-pixels-2b3e0/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/coding-pixels-2b3e0/us-central1/helloWorld)."}}
+[info] i  functions: Watching "/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions\" for Cloud Functions..."}}
+[debug] [2022-10-21T04:29:48.905Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-21T04:29:49.443Z] > [functions] package.json contents: {
+  "main": "server.js",
+  "dependencies": {
+    "firebase-frameworks": "^0.6.0",
+    "firebase-functions": "^3.23.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "engines": {
+    "node": "16"
+  }
+}
+[debug] [2022-10-21T04:29:49.443Z] Building nodejs source
+[debug] [2022-10-21T04:29:49.443Z] Analyzing nodejs backend spec
+[debug] [2022-10-21T04:29:49.444Z] Found functions.yaml. Got spec: {
+  "endpoints": {
+    "ssrcodingpixels2b3e0": {
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "httpsTrigger": {},
+      "entryPoint": "ssr"
+    }
+  },
+  "specVersion": "v1alpha1",
+  "requiredAPIs": []
+}
+[info] ✔  functions: Loaded functions definitions from source: ssr. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ssr."}}
+[info] ✔  functions[us-central1-ssrcodingpixels2b3e0]: http function initialized (http://127.0.0.1:5001/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5010 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ 127.0.0.1:8085 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-21T04:30:08.777Z] Oct 21, 2022 12:30:08 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 12:30:08 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET / HTTP/1.1" 200 - "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET / HTTP/1.1\" 200 - \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.558Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [none]
+[debug] [2022-10-21T04:30:18.562Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [none]
+[debug] [2022-10-21T04:30:18.579Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [none]
+[debug] [2022-10-21T04:30:18.581Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [none]
+[debug] [2022-10-21T04:30:18.582Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [none]
+[debug] [2022-10-21T04:30:18.584Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [none]
+[debug] [2022-10-21T04:30:18.621Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js 200
+[debug] [2022-10-21T04:30:18.621Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [stream]
+[debug] [2022-10-21T04:30:18.623Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js 200
+[debug] [2022-10-21T04:30:18.623Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [stream]
+[debug] [2022-10-21T04:30:18.624Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js 200
+[debug] [2022-10-21T04:30:18.625Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1" 200 9248 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1\" 200 9248 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.628Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [none]
+[debug] [2022-10-21T04:30:18.675Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js 200
+[debug] [2022-10-21T04:30:18.677Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [stream]
+[debug] [2022-10-21T04:30:18.679Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js 200
+[debug] [2022-10-21T04:30:18.679Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1" 200 38191 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1\" 200 38191 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.733Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [none]
+[debug] [2022-10-21T04:30:18.778Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js 200
+[debug] [2022-10-21T04:30:18.778Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1" 200 9248 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1\" 200 9248 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.783Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [none]
+[debug] [2022-10-21T04:30:18.821Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js 200
+[debug] [2022-10-21T04:30:18.821Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1" 200 38191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1\" 200 38191 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.838Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1" 200 165650 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1\" 200 165650 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.858Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [none]
+[debug] [2022-10-21T04:30:18.873Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js 200
+[debug] [2022-10-21T04:30:18.874Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1" 200 8116 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1\" 200 8116 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.884Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [none]
+[debug] [2022-10-21T04:30:18.893Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js 200
+[debug] [2022-10-21T04:30:18.894Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [stream]
+[debug] [2022-10-21T04:30:18.896Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js 200
+[debug] [2022-10-21T04:30:18.896Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1" 200 27303 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1\" 200 27303 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.948Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] "GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1" 200 38965 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:18 +0000] \"GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1\" 200 38965 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:18.998Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [none]
+[debug] [2022-10-21T04:30:19.141Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js 200
+[debug] [2022-10-21T04:30:19.141Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [stream]
+[debug] [2022-10-21T04:30:19.203Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js 200
+[debug] [2022-10-21T04:30:19.204Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1" 200 8116 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1\" 200 8116 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.206Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1" 200 125641 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1\" 200 125641 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.263Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1" 200 313501 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1\" 200 313501 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.272Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [none]
+[debug] [2022-10-21T04:30:19.304Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js 200
+[debug] [2022-10-21T04:30:19.305Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1" 200 30702 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1\" 200 30702 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.315Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [none]
+[debug] [2022-10-21T04:30:19.317Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js 200
+[debug] [2022-10-21T04:30:19.317Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [stream]
+[debug] [2022-10-21T04:30:19.371Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js 200
+[debug] [2022-10-21T04:30:19.371Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1" 200 27303 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1\" 200 27303 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.405Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1" 200 165650 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1\" 200 165650 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.553Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js 200
+[debug] [2022-10-21T04:30:19.553Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1" 200 38965 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1\" 200 38965 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1" 200 125641 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1\" 200 125641 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:19.741Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js 200
+[debug] [2022-10-21T04:30:19.741Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [stream]
+[debug] [2022-10-21T04:30:19.750Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js 200
+[debug] [2022-10-21T04:30:19.750Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] "GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1" 200 313501 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:19 +0000] \"GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1\" 200 313501 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1" 200 30702 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1\" 200 30702 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET / HTTP/1.1" 200 - "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET / HTTP/1.1\" 200 - \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1" - - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1\" - - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.508Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [none]
+[debug] [2022-10-21T04:30:20.510Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [none]
+[debug] [2022-10-21T04:30:20.522Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [none]
+[debug] [2022-10-21T04:30:20.524Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [none]
+[debug] [2022-10-21T04:30:20.526Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [none]
+[debug] [2022-10-21T04:30:20.528Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [none]
+[debug] [2022-10-21T04:30:20.562Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js 200
+[debug] [2022-10-21T04:30:20.562Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [stream]
+[debug] [2022-10-21T04:30:20.565Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js 200
+[debug] [2022-10-21T04:30:20.565Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1" 200 9248 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1\" 200 9248 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.567Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js 200
+[debug] [2022-10-21T04:30:20.567Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [stream]
+[debug] [2022-10-21T04:30:20.569Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js 200
+[debug] [2022-10-21T04:30:20.569Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [stream]
+[debug] [2022-10-21T04:30:20.570Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1" 200 8116 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1\" 200 8116 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.575Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [none]
+[debug] [2022-10-21T04:30:20.676Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js 200
+[debug] [2022-10-21T04:30:20.676Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1" 200 125641 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1\" 200 125641 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.748Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [none]
+[debug] [2022-10-21T04:30:20.784Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js 200
+[debug] [2022-10-21T04:30:20.784Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1" 200 27303 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1\" 200 27303 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.799Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [none]
+[debug] [2022-10-21T04:30:20.810Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js 200
+[debug] [2022-10-21T04:30:20.810Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1" 200 38191 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1\" 200 38191 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.841Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js 200
+[debug] [2022-10-21T04:30:20.841Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:20.886Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js 200
+[debug] [2022-10-21T04:30:20.886Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [stream]
+[debug] [2022-10-21T04:30:20.920Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js 200
+[debug] [2022-10-21T04:30:20.920Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] "GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1" 200 93189 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:20 +0000] \"GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1\" 200 93189 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] "GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1" 200 165650 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] \"GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1\" 200 165650 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] "GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1" 200 30702 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] \"GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1\" 200 30702 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] "GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1" 200 25831 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] \"GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1\" 200 25831 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:21.309Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [none]
+[debug] [2022-10-21T04:30:21.348Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js 200
+[debug] [2022-10-21T04:30:21.349Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] "GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1" 200 25831 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] \"GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1\" 200 25831 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:21.619Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js 200
+[debug] [2022-10-21T04:30:21.620Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] "GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1" 200 38965 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] \"GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1\" 200 38965 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:21 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET / HTTP/1.1" 200 - "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET / HTTP/1.1\" 200 - \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:53.157Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [none]
+[debug] [2022-10-21T04:30:53.160Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [none]
+[debug] [2022-10-21T04:30:53.168Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [none]
+[debug] [2022-10-21T04:30:53.170Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [none]
+[debug] [2022-10-21T04:30:53.171Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [none]
+[debug] [2022-10-21T04:30:53.172Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [none]
+[debug] [2022-10-21T04:30:53.205Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js 200
+[debug] [2022-10-21T04:30:53.205Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [stream]
+[debug] [2022-10-21T04:30:53.207Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js 200
+[debug] [2022-10-21T04:30:53.207Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1" 200 9248 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1\" 200 9248 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:53.208Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js 200
+[debug] [2022-10-21T04:30:53.208Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [stream]
+[debug] [2022-10-21T04:30:53.210Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js 200
+[debug] [2022-10-21T04:30:53.210Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [stream]
+[debug] [2022-10-21T04:30:53.211Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [none]
+[debug] [2022-10-21T04:30:53.224Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js 200
+[debug] [2022-10-21T04:30:53.224Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1" 200 93189 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1\" 200 93189 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:53.290Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [none]
+[debug] [2022-10-21T04:30:53.331Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js 200
+[debug] [2022-10-21T04:30:53.331Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1" 200 25831 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1\" 200 25831 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:53.341Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [none]
+[debug] [2022-10-21T04:30:53.380Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js 200
+[debug] [2022-10-21T04:30:53.381Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1" 200 27303 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1\" 200 27303 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:53.396Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [none]
+[debug] [2022-10-21T04:30:53.438Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js 200
+[debug] [2022-10-21T04:30:53.439Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1" 200 30702 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1\" 200 30702 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:30:53.462Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js 200
+[debug] [2022-10-21T04:30:53.462Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [stream]
+[debug] [2022-10-21T04:30:53.550Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js 200
+[debug] [2022-10-21T04:30:53.550Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1" 200 165650 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1\" 200 165650 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1" 200 8116 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1\" 200 8116 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1" 200 38191 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1\" 200 38191 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1" 200 125641 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1\" 200 125641 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1" 200 38965 "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1\" 200 38965 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:30:53 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:32:14.492Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-21T04:32:14.493Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-21T04:32:14.493Z] Accepted request GET /coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0 --> us-central1-ssrcodingpixels2b3e0
+[debug] [2022-10-21T04:32:14.496Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-21T04:32:14.497Z] [functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-21T04:32:14.534Z] [worker-pool] addWorker(us-central1-ssrcodingpixels2b3e0) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-ssrcodingpixels2b3e0)"}}
+[debug] [2022-10-21T04:32:14.534Z] [worker-pool] Adding worker with key us-central1-ssrcodingpixels2b3e0, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-ssrcodingpixels2b3e0, total=1"}}
+[debug] [2022-10-21T04:32:15.016Z] [runtime-status] [19862] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.2.0","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.2.0\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-21T04:32:15.017Z] [runtime-status] [19862] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-21T04:32:15.017Z] [runtime-status] [19862] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-21T04:32:15.017Z] [runtime-status] [19862] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-21T04:32:15.036Z] [runtime-status] [19862] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-21T04:32:15.036Z] [runtime-status] [19862] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-21T04:32:15.036Z] [runtime-status] [19862] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-21T04:32:15.037Z] [runtime-status] [19862] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.2.0","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.2.0\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-21T04:32:15.037Z] [runtime-status] [19862] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-21T04:32:15.037Z] [runtime-status] [19862] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.2.0","resolution":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.2.0\",\"resolution\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-21T04:32:15.042Z] [runtime-status] [19862] Functions runtime initialized. {"cwd":"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Functions runtime initialized. {\"cwd\":\"/Users/fahadahmed/development/firebase-nextjs/.firebase/coding-pixels-2b3e0/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-10-21T04:32:15.043Z] [runtime-status] [19862] Listening to port: /var/folders/3m/cnx97ctn6fg31ht_qlmv62080000gn/T/fire_emu_ef385cc0aa040a89.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"[runtime-status] [19862] Listening to port: /var/folders/3m/cnx97ctn6fg31ht_qlmv62080000gn/T/fire_emu_ef385cc0aa040a89.sock"}}
+[debug] [2022-10-21T04:32:15.047Z] [worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0)"}}
+[debug] [2022-10-21T04:32:15.047Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY"}}
+[info] i  functions: Beginning execution of "ssr" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Beginning execution of \"ssr\""}}
+[debug] [2022-10-21T04:32:15.122Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE"}}
+[debug] [2022-10-21T04:32:15.122Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "ssr" in 72.027458ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Finished \"ssr\" in 72.027458ms"}}
+[debug] [2022-10-21T04:32:15.139Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-10-21T04:32:16.297Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-21T04:32:16.297Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-21T04:32:16.297Z] Accepted request GET /coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0 --> us-central1-ssrcodingpixels2b3e0
+[debug] [2022-10-21T04:32:16.301Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-21T04:32:16.301Z] [functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/"}}
+[debug] [2022-10-21T04:32:16.301Z] [worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0)"}}
+[debug] [2022-10-21T04:32:16.302Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY"}}
+[info] i  functions: Beginning execution of "ssr" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Beginning execution of \"ssr\""}}
+[debug] [2022-10-21T04:32:16.305Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE"}}
+[debug] [2022-10-21T04:32:16.305Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "ssr" in 1.292042ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Finished \"ssr\" in 1.292042ms"}}
+[debug] [2022-10-21T04:32:26.309Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-21T04:32:26.309Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-21T04:32:26.309Z] Accepted request GET /coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0 --> us-central1-ssrcodingpixels2b3e0
+[debug] [2022-10-21T04:32:26.311Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-21T04:32:26.311Z] [functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/"}}
+[debug] [2022-10-21T04:32:26.311Z] [worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0)"}}
+[debug] [2022-10-21T04:32:26.312Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY"}}
+[info] i  functions: Beginning execution of "ssr" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Beginning execution of \"ssr\""}}
+[debug] [2022-10-21T04:32:26.315Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE"}}
+[debug] [2022-10-21T04:32:26.315Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "ssr" in 0.623917ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Finished \"ssr\" in 0.623917ms"}}
+[debug] [2022-10-21T04:32:26.369Z] Functions emulator received unknown request at path /favicon.ico
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:41:57 +0000] "GET / HTTP/1.1" 200 - "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:41:57 +0000] \"GET / HTTP/1.1\" 200 - \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2022:04:41:57 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2022:04:41:57 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-21T04:41:59.991Z] Oct 21, 2022 12:41:59 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 12:41:59 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2022-10-21T04:42:00.085Z] Oct 21, 2022 12:42:00 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 12:42:00 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-10-21T04:42:03.825Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-21T04:42:03.825Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-21T04:42:03.825Z] Accepted request GET /coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0 --> us-central1-ssrcodingpixels2b3e0
+[debug] [2022-10-21T04:42:03.829Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-21T04:42:03.829Z] [functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/coding-pixels-2b3e0/us-central1/ssrcodingpixels2b3e0, mapping to path=/"}}
+[debug] [2022-10-21T04:42:03.830Z] [worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-ssrcodingpixels2b3e0)"}}
+[debug] [2022-10-21T04:42:03.830Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: BUSY"}}
+[info] i  functions: Beginning execution of "ssr" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Beginning execution of \"ssr\""}}
+[debug] [2022-10-21T04:42:03.833Z] [worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssrcodingpixels2b3e0-bdc4de86-bdd0-492d-bd7b-d3f31451a93b]: IDLE"}}
+[debug] [2022-10-21T04:42:03.833Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "ssr" in 1.041375ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssrcodingpixels2b3e0"},"extension":{},"message":"Finished \"ssr\" in 1.041375ms"}}
+[debug] [2022-10-21T04:44:18.060Z] Oct 21, 2022 12:44:18 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 12:44:18 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2022-10-21T04:44:19.559Z] Oct 21, 2022 12:44:19 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 12:44:19 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-10-21T05:51:15.002Z] Oct 21, 2022 1:51:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 1:51:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2022-10-21T06:09:56.367Z] Oct 21, 2022 2:09:56 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 2:09:56 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-10-21T06:27:55.195Z] Oct 21, 2022 2:27:55 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 2:27:55 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2022-10-21T06:45:05.308Z] Oct 21, 2022 2:45:05 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 21, 2022 2:45:05 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-10-21T08:12:09.471Z] File /Users/fahadahmed/development/firebase-nextjs/functions/yarn.lock changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/fahadahmed/development/firebase-nextjs/functions/yarn.lock changed, reloading triggers"}}
+[debug] [2022-10-21T08:12:09.471Z] File /Users/fahadahmed/development/firebase-nextjs/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/fahadahmed/development/firebase-nextjs/functions/package.json changed, reloading triggers"}}
+[debug] [2022-10-21T08:12:10.472Z] Validating nodejs source
+[debug] [2022-10-21T08:12:11.186Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "firebase-admin": "^10.2.0",
+    "firebase-functions": "^4.0.1",
+    "graphql": "^16.6.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "private": true
+}
+[debug] [2022-10-21T08:12:11.186Z] Building nodejs source
+[debug] [2022-10-21T08:12:11.186Z] Analyzing nodejs backend spec
+[debug] [2022-10-21T08:12:11.187Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-21T08:12:11.278Z] Serving at port 9005
+
+[debug] [2022-10-21T08:12:11.366Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-21T08:12:11.369Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
