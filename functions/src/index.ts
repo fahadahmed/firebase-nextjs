@@ -1,9 +1,30 @@
 import * as functions from 'firebase-functions';
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
+const express = require('express');
+const graphqlHTTP = require('express-graphql');
+const { buildSchema } = require('graphql');
 
-export const helloWorld = functions.https.onRequest((request, response) => {
-  functions.logger.info('Hello logs!', { structuredData: true });
-  response.send('Hello from Firebase!');
-});
+const app = express();
+
+const schema = buildSchema(`
+  type Query {
+    hello: String
+  }
+`);
+
+var root = {
+  hello: () => {
+    return 'Hello World';
+  },
+};
+
+app.use(
+  '/',
+  graphqlHTTP({
+    schema: schema,
+    rootValue: root,
+    graphiql: true,
+  })
+);
+
+exports.graphql = functions.https.onRequest(app);
